@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="a1"></p>
+
+<script>
+var animal = {
+        Type:"Pet",
+        colour:"white"
+  };
+var rabbit = {
+name:"rabbit",    
+age: 1
+  };
+
+rabbit.__proto__ = animal
+
+document.getElementById("a1").innerHTML = "Name:"+rabbit.name+'</br>' +"Type:" +rabbit.Type + '</br>' + "Colour:" + rabbit.colour +'</br>' + "Age:" +rabbit.age;
+;
+</script>
+
+</body>
+</html>
